@@ -1,0 +1,230 @@
+<html>
+ <head>
+  <title>Social Engineering Awareness</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1px 40px;
+      background-color: #0a1f44;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar img {
+      height: 80px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+    .navbar .cta {
+      background-color: #00d1b2;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+    }
+    .hero {
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #0a1f44 0%, #1a2e5b 100%);
+      padding: 100px 20px;
+      margin-top: 40px; /* Prevent navbar overlap */
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 60px; /* Prevent navbar overlap */
+    }
+    .section h2 {
+      font-size: 36px; /* Increase size of section titles */
+      margin-bottom: 20px;
+    }
+    .section p {
+      font-size: 18px; /* Increase size of section paragraph text */
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .feature-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .feature-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: left;
+    }
+    .feature-card h3 {
+      font-size: 22px; /* Slightly increase feature card titles */
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 16px; /* Increase font size of card descriptions */
+      color: #666;
+    }
+    .cta-button {
+      background-color: #00d1b2;
+      padding: 15px 30px;
+      border-radius: 5px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #008f7e;
+    }
+
+    /* Additional Responsive Styling */
+    @media (max-width: 768px) {
+      .hero img {
+        max-width: 90%;
+      }
+      .feature-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .feature-card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+ </head>
+ <body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <img alt="Logo" height="80" src="Logo_Bulat_kurung_fix_blank.png" width="80"/>
+    <div>
+      <a href="#home">Beranda</a>
+      <a href="#what-is">Apa Itu Social Engineering</a>
+      <a href="#real-life-cases">Kasus Nyata</a>
+      <a href="#warning-signs">Tanda-Tanda</a>
+      <a href="#protection-tips">Tips Perlindungan</a>
+      <a href="#resources">Resources</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <h1>Memahami Social Engineering</h1>
+    <p>Social engineering adalah metode yang digunakan oleh penyerang untuk memanipulasi individu agar mengungkapkan informasi sensitif, sering kali tanpa menyadari ancaman yang mungkin terjadi.</p>
+    <a class="cta-button" href="#what-is">Pelajari Lebih Lanjut</a>
+  </div>
+
+  <!-- Apa Itu Social Engineering -->
+  <div class="section" id="what-is">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <img src="mengenal-social-engineering-dan-modusnya_1.jpg" alt="Ilustrasi Social Engineering" style="max-width: 100%; height: auto; border-radius: 8px;">
+    </div>
+    <h2>Apa Itu Social Engineering?</h2>
+    <p>Social engineering adalah seni untuk memanipulasi orang sehingga mereka memberikan informasi pribadi yang sensitif. Alih-alih meretas sistem, para pelaku social engineering mengeksploitasi psikologi manusia untuk menipu orang agar mengungkapkan data sensitif seperti kata sandi, nomor kartu kredit, atau informasi pribadi lainnya.</p>
+  </div>
+
+  <!-- Kasus Nyata Social Engineering -->
+  <div class="section" id="real-life-cases" style="background-color: #f9f9f9;">
+    <h2>Kasus Nyata Social Engineering</h2>
+    <p>Berikut adalah beberapa contoh serangan social engineering yang terkenal:</p>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3><i class="fas fa-envelope"></i> Phishing Email</h3>
+        <p>Email phishing menyamar sebagai perusahaan atau kontak yang sah untuk menipu pengguna agar mengungkapkan kredensial login. Misalnya, seorang penyerang dapat menyamar sebagai bank dan meminta Anda untuk mengonfirmasi detail akun melalui email.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-headset"></i> Penipuan Dukungan Teknologi</h3>
+        <p>Penyerang mungkin menelepon dengan berpura-pura menjadi dukungan teknis dan mengklaim ada masalah dengan komputer Anda. Mereka akan meyakinkan Anda untuk memberi mereka akses jarak jauh, yang memungkinkan mereka mencuri data pribadi atau menginstal malware.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-user-secret"></i> Pretexting</h3>
+        <p>Dalam pretexting, penyerang membuat skenario palsu, seperti menyamar sebagai pihak berwenang (polisi, dukungan TI) untuk mengumpulkan informasi sensitif seperti kata sandi atau nomor jaminan sosial.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tanda-Tanda Anda Mungkin Menjadi Target -->
+  <div class="section" id="warning-signs">
+    <h2>Tanda-Tanda Anda Mungkin Menjadi Target</h2>
+    <p>Jika Anda melihat perilaku berikut, Anda mungkin menjadi sasaran serangan social engineering:</p>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3><i class="fas fa-phone"></i> Permintaan yang Tidak Terduga</h3>
+        <p>Menerima panggilan, email, atau pesan yang tidak terduga yang meminta informasi pribadi seperti detail login atau data keuangan.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-clock"></i> Aksi Mendesak</h3>
+        <p>Dipaksa untuk bertindak cepat atau menghadapi konsekuensi negatif jika tidak segera mematuhi, seperti "akun Anda akan dikunci".</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-link"></i> Tautan Mencurigakan</h3>
+        <p>Email atau pesan yang mengandung tautan yang tidak dikenal, meminta Anda untuk mengkliknya atau mengunduh lampiran tanpa memverifikasi keasliannya.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tips Perlindungan -->
+  <div class="section" id="protection-tips" style="background-color: #f9f9f9;">
+    <h2>Bagaimana Melindungi Diri Dari Social Engineering</h2>
+    <p>Berikut adalah beberapa tips untuk melindungi diri Anda dari serangan social engineering:</p>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3><i class="fas fa-check-circle"></i> Verifikasi Permintaan</h3>
+        <p>Selalu verifikasi permintaan informasi sensitif dengan menghubungi organisasi atau orang tersebut langsung melalui metode yang tepercaya.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-link"></i> Waspadai Tautan yang Tidak Dikenal</h3>
+        <p>Hindari mengklik tautan yang mencurigakan dalam email atau pesan teks. Arahkan kursor di atas tautan untuk memeriksa ke mana tautan tersebut mengarah sebelum mengkliknya.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-shield-alt"></i> Gunakan Autentikasi Dua Faktor</h3>
+        <p>Aktifkan autentikasi dua faktor pada akun Anda untuk menambah lapisan perlindungan tambahan, sehingga penyerang tidak dapat mengakses akun Anda meskipun mereka mengetahui kata sandi Anda.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="section" id="resources">
+    <h2>Additional Resources</h2>
+    <p>Explore more about social engineering and how to stay safe:</p>
+    <ul style="list-style-type: none; padding: 0;">
+      <li><a href="https://www.cisa.gov/social-engineering" target="_blank" rel="noopener noreferrer">CISA - Social Engineering Information</a></li>
+      <li><a href="https://www.cnbc.com/social-engineering-awareness/" target="_blank" rel="noopener noreferrer">CNBC - How to Spot Social Engineering Scams</a></li>
+      <li><a href="https://www.youtube.com/watch?v=Y89zMn85vAo" target="_blank" rel="noopener noreferrer">YouTube - Social Engineering Explained</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <div style="background-color: #0a1f44; color: white; text-align: center; padding: 20px;">
+    <p>&copy; 2024 Social Engineering Awareness | Semua hak cipta dilindungi</p>
+  </div>
+ </body>
+</html>
